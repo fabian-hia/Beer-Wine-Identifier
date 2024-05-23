@@ -6,7 +6,7 @@ from fastai.vision.widgets import *
 import matplotlib.pyplot as plt
 
 # Function to load the model
-@st.cache_data()
+@st.cache()
 def load_model():
     return load_learner('model_beerwine.pkl')
 
