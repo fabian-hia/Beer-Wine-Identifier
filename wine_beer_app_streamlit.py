@@ -5,6 +5,9 @@ from fastai.vision.all import *
 from fastai.vision.widgets import *
 import matplotlib.pyplot as plt
 
+st.cache_data.clear()
+st.cache_resource.clear()
+
 # Function to load the model
 @st.cache()
 def load_model():
