@@ -6,8 +6,8 @@ from fastai.vision.widgets import *
 import matplotlib.pyplot as plt
 
 import pathlib
-plt = platform.system()
-if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
+pltsys = platform.system()
+if pltsys == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 
 # Function to load the model
 @st.cache_resource()
